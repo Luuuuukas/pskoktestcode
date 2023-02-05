@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 public class User {
 
-    private final int id ;
-    private final String firstName; //454
-    private final String lastName;
+    private final int id;
+    private final String firstUserName;
+    private final String lastUserName;
     private final int age;
     private ArrayList<User> children;
 
@@ -14,10 +14,13 @@ public class User {
         this.lastName = lastName;
         this.age = age;
         this.profession = profession;
-
+    }
+    
+    public static void main(String[]args){
     }
 
     public String getLastName() {
         return lastName;
     }
+    
 }
