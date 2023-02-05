@@ -18,7 +18,6 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.profession = profession;
     }
 
     public void setId(int id) {
@@ -78,36 +77,15 @@ public class User {
 
         System.out.println("Jūsų šios dienos savijauta: " + test.getSavijauta() + ", " +test.getFirstName() + ", " + test.getLastName() + ", " + test.getAge() + ", " + test.getProfession());
 
-        tekstas = test.getChildName(test);
+        //tekstas = test.getChildName(test);
 
         System.out.println("Metodo tekstas: " + tekstas + ", Jūsų šios dienos savijauta: " + test.getSavijauta() + ", " +test.getFirstName() + ", " + test.getLastName() + ", " + test.getAge() + ", " + test.getProfession());
 
     }
 
-    public String getChildName(User child) {
-        //if (!this.children.contains(child)) {
-           // new Exception("Invalid argument!");
-       // } else {
-            String name = null;
-            if (child.getFirstName() != null) {
-                name = child.getFirstName();
-            }
-            if (name == "Harry") {
-                name.replace('r', 'p');
-            }
-        //    if (name != null || name.length() > 0) {
-        //        name.concat(child.getLastName());
-       //     }
-      //  }
-        return name;
-    }
 
     public String getFirstName() {
         return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 
     public int getId() {
